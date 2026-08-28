@@ -1,0 +1,583 @@
+*{
+    margin: 0;
+    padding: 0;                            
+    box-sizing: border-box;
+}
+
+header{
+    height: 100px;
+    background-color: black;
+
+}
+
+.header{
+    max-width: 1140px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo h1{
+    
+color: rgb(0, 89, 255);
+font-size: 50px;
+font-family: Arial, Helvetica, sans-serif;
+margin: auto;
+
+}
+
+
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 5px;
+    transition: 0.3s;
+    margin: auto;
+}
+
+.menu a{
+    color: white
+}
+
+.menu a:hover{
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+
+
+/* efeito ao passar o mouse*/ 
+
+.menu a:hover {
+    color: #00bfff;
+    border-bottom: 2px solid #00bfff;
+}
+
+.banner{
+    width: 100%;
+    height: 600px;
+    background-image: 
+        linear-gradient(
+            rgba(0, 0 ,0 ,0.498),
+            rgba(0, 0 ,0 ,0.498)),
+         url("public/assets/imagem 2.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+}
+.banner-conteudo{
+    width: 100%;
+    max-width: 1140px;
+    margin:auto;
+    padding: 0 30px;
+
+
+}
+
+.banner p{
+color: #fcfcfc;
+font-size: 25px;
+font-family: Arial, Helvetica, sans-serif;
+
+
+}
+.banner h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+
+.banner h2 span{
+    color: #00bfff;
+    
+}
+
+
+p{
+    font-size: 50px;
+    margin-bottom: 35px;
+
+}
+.botao{
+    display:inline-block;
+    background-color: #00bfff;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 14px 28px;
+    border-radius: px;
+    transition: 0.3s;
+    text-decoration: none;
+
+}
+
+.botao:hover{
+    background-color: #00bfff;
+
+}
+
+
+.sobre{
+    width: 100%;
+    background-color: #b7d5f3;
+    padding: 80px 0;
+}
+
+.sobre-conteudo{
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+}
+
+.sobre-texto{
+
+    width: 50%;
+
+}
+
+.sobre-texto h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.sobre-texto p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+    line-height: 1,5;
+    color: #000000;
+
+}
+
+
+.sobre-imagem{
+    width: 60%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+   
+
+}
+.sobre-imagem img{
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    border-radius: 10px
+}
+
+
+.cursos {
+    padding: 90px 8%;
+    background-color: #a0d0ff;
+    text-align: center;
+}
+
+
+.sobre-cursos {
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.sobre-cursos h2 {
+    margin-bottom: 15px;
+
+    color: #111827;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.sobre-cursos p {
+    color: #000000;
+    font-size: 35px;
+    line-height: 1.7;
+}
+
+
+
+.cursos-box {
+    display: grid;
+    grid-template-columns: repeat(2, 280px);
+
+    justify-content: center;
+
+    column-gap: 70px;
+    row-gap: 50px;
+}
+
+
+.curso-card {
+    width: 260px;
+    min-height: 350px;
+
+    padding: 30px 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-radius: 18px;
+
+    color: white;
+    text-align: center;
+
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+
+    transition: 0.3s ease;
+}
+
+.curso-card:hover {
+    transform: translateY(-10px) scale(1.02);
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.20);
+}
+
+
+
+.curso-card h3 {
+    margin: 0 0 20px;
+
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+.curso-card p {
+    margin-bottom: 25px;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+.curso-card .botao {
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    background-color: #0183ec;
+    color: white;
+
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.curso-card .botao:hover {
+    background-color: #006dcc;
+    transform: translateY(-2px);
+}
+
+
+.html-css {
+    background: linear-gradient(145deg, #fd0000, #e05418);
+}
+
+.javascript {
+    background: linear-gradient(145deg, #f0e068, #e8cf00);
+    color: #222;
+}
+
+.javascript h3 {
+    color: #222;
+}
+
+.javascript p {
+    color: #333;
+}
+
+.python {
+    background: linear-gradient(145deg, #3776ab, #43749c);
+}
+
+.python h3 {
+    color: #ffd343;
+}
+
+.git {
+    background: linear-gradient(145deg, #e78271, #d83b20);
+}
+
+
+.contato-info {
+    width: 100%;
+    padding: 30px 0;
+
+    background: #5d85e2 !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.info-item {
+    width: 240px;
+    min-height: 90px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    background: #0f172a !important;
+
+    border: 1px solid #334155;
+
+    border-radius: 15px;
+
+    box-sizing: border-box;
+
+    text-align: left;
+
+    transition: 0.3s ease;
+}
+
+.info-item:hover {
+    transform: translateY(-4px);
+
+    border-color: #38bdf8;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.info-item > span {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #1e3a8a;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+}
+
+
+
+.info-item strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #38bdf8;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.info-item p {
+    margin: 0 !important;
+
+    color: #cbd5e1 !important;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px !important;
+
+    line-height: 1.4;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+
+    text-align: left;
+}
+
+.info-item {
+    width: 290px;
+    min-height: 95px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 18px;
+
+    background: #0f172a !important;
+
+    border: 1px solid #334155;
+    border-radius: 15px;
+
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+
+.info-item p {
+    margin: 0 !important;
+
+    color: #cbd5e1 !important;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px !important;
+
+    line-height: 1.4;
+
+    overflow-wrap: anywhere;
+}
+
+.info-item strong {
+    color: #2f74ce;
+    font-size: 14px;
+    font-size: 35px;
+}
+
+.info-item p {
+    margin: 0 !important;
+
+    color: #cbd5e1 !important;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px !important;
+
+    line-height: 1.4;
+
+    overflow-wrap: anywhere;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.redes a {
+    padding: 10px 16px;
+
+    border: 1px solid #334155;
+    border-radius: 10px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.redes a:hover {
+    background-color: #51718b;
+    border-color: #0183ec;
+    color: rgb(255, 247, 247);
+}
+
+
+
+footer {
+    padding: 22px 20px;
+
+    background-color: #1c42eb;
+
+    color: #0066f5;
+
+    text-align: center;
+
+    border-top: 1px solid #1e293b;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+}
+
+
+.contato {
+    padding: 80px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(135deg, #7ca6fa, #4d82ec);
+
+    color: white;
+}
+
+
+.contato h2 {
+    margin: 0 0 15px;
+
+    font-size: 60px;
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+
+.contato p {
+    margin: 0 0 30px;
+
+    color: #cbd5e1;
+
+    font-size: 28px;
+    line-height: 1.6;
+}
+
+
+.contato .botao {
+    padding: 14px 30px;
+
+    border-radius: 10px;
+
+    background-color: #0b82b9;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    box-shadow: 0 8px 20px rgba(61, 175, 228, 0.3);
+
+    transition: all 0.3s ease;
+}
+
+
+.contato .botao:hover {
+    background-color: #38bdf8;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 12px 25px rgba(14, 165, 233, 0.45);
+}
+
+
